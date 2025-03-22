@@ -6,8 +6,8 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime
 
 # Load and combine CSV files into one array
-data_1 = pd.read_csv("steam_game_descriptions_test_20250304_125622_dropAllNull.csv")
-data_2 = pd.read_csv("steam_game_descriptions_test_20250304_222258_dropAllNull.csv")
+data_1 = pd.read_csv("game/steam_game_descriptions_test_20250304_125622_dropAllNull.csv")
+data_2 = pd.read_csv("game/steam_game_descriptions_test_20250304_222258_dropAllNull.csv")
 data = pd.concat([data_1, data_2])
 app_ids = data["app_id"][:15000].tolist()  # All app IDs in one array
 print(f"Total app IDs to process: {len(app_ids)}")

@@ -1,0 +1,7 @@
+{
+    "cmake.configureSettings": {
+        "java.project.referencedLibraries": [
+            "lib/**/*.jar"
+        ]
+    }
+}

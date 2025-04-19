@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="904aea8c-0d8b-4897-b1f9-de9a75cc1e4f" name="Changes" comment="" />
+    <list default="true" id="904aea8c-0d8b-4897-b1f9-de9a75cc1e4f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Implementation/algorithms/naiveBayes_Classification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Implementation/algorithms/oneR_Classification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Implementation/algorithms/src.arff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,10 +20,16 @@
       <list>
         <option value="Jupyter Notebook" />
         <option value="Python Script" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -29,28 +40,64 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.CleanJSON.executor&quot;: &quot;Run&quot;,
-    &quot;Python.CrawlDataSteam.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/NLP05&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.IncrementalClassifier.executor": "Run",
+    "Application.naiveBayes_Classification.executor": "Run",
+    "Application.oneR_Classification.executor": "Run",
+    "Python.CleanJSON.executor": "Run",
+    "Python.CrawlDataSteam.executor": "Run",
+    "Python.test.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "Implementation",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/HCMIU_Data-Mining/src/Implementation/algorithms",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.37011495",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\HCMIU_Data-Mining\src\Implementation\algorithms" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Implementation.algorithms" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="oneR_Classification" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Implementation.algorithms.oneR_Classification" />
+      <module name="HCMIU_Data-Mining" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Implementation.algorithms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.oneR_Classification" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-PY-243.25659.43" />
-        <option value="bundled-python-sdk-181015f7ab06-4df51de95216-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.25659.43" />
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
       </set>
     </attachedChunks>
   </component>
@@ -66,6 +113,9 @@
       <workItem from="1741014652402" duration="48000" />
       <workItem from="1741056647980" duration="8521000" />
       <workItem from="1741078041282" duration="13691000" />
+      <workItem from="1745033022102" duration="947000" />
+      <workItem from="1745034452180" duration="445000" />
+      <workItem from="1745072881068" duration="548000" />
     </task>
     <servers />
   </component>

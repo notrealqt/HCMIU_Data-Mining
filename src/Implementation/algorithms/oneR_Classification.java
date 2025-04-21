@@ -16,21 +16,19 @@ public class oneR_Classification {
             DataSource source = new DataSource("src/Implementation/algorithms/src.arff");
             Instances data = source.getDataSet();
 
-            //remove the first two attributes
-            String[] removeOptions = new String[]{"-R", "1,2"};
+            // remove the first two attributes
+            String[] removeOptions = new String[] { "-R", "1,2" };
             Remove removeFilter = new Remove();
             removeFilter.setOptions(removeOptions);
             removeFilter.setInputFormat(data);
             Instances finalData = Filter.useFilter(data, removeFilter);
-
-
 
             // Step 4: Set class attribute (all_reviews_encoded)
             finalData.setClassIndex(finalData.numAttributes() - 4); // Last column
 
             // Step 5: Build OneR classifier
             OneR classifier = new OneR();
-            classifier.setOptions(new String[]{"-B", "6"}); // Minimum bucket size for discretization
+            classifier.setOptions(new String[] { "-B", "6" }); // Minimum bucket size for discretization
             classifier.buildClassifier(finalData);
 
             // Step 6: Evaluate the model using 10-fold cross-validation

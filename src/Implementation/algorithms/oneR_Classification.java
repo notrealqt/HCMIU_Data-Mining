@@ -13,7 +13,7 @@ public class oneR_Classification {
     public static void main(String[] args) {
         try {
             // Step 1: Load the arff file
-            DataSource source = new DataSource("src/Implementation/algorithms/src.arff");
+            DataSource source = new DataSource("src/Implementation/algorithms/steam_game_data_encoded.arff");
             Instances data = source.getDataSet();
 
             // remove the first two attributes

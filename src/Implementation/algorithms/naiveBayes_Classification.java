@@ -12,7 +12,7 @@ import java.util.Random;
 public class naiveBayes_Classification {
     public static void main(String[] args){
         try {
-            ConverterUtils.DataSource source = new ConverterUtils.DataSource("src/Implementation/algorithms/src.arff");
+            ConverterUtils.DataSource source = new ConverterUtils.DataSource("src/Implementation/algorithms/steam_game_data_encoded.arff");
             Instances data = source.getDataSet();
 
             //remove the first two attributes

@@ -14,6 +14,7 @@ public class ARFFBinaryToNominal {
 
         String line;
         boolean dataSection = false;
+        List<String> dataLines = new ArrayList<>();
 
         // Define the attribute groups
         Map<String, Integer> attributeGroups = new LinkedHashMap<>();
@@ -24,46 +25,26 @@ public class ARFFBinaryToNominal {
         attributeGroups.put("all_count_encoded", 7);
         attributeGroups.put("tags_encoded", 10);
 
-        // Containers to store unique values and data
-        Set<String> appIds = new TreeSet<>();
-        Set<String> descriptions = new TreeSet<>();
-        List<String> dataLines = new ArrayList<>();
-
-        // First pass: collect values and store data lines
+        // Read input and extract data section
         while ((line = reader.readLine()) != null) {
-            if (line.trim().equalsIgnoreCase("@data")) {
+            line = line.trim();
+            if (line.isEmpty())
+                continue;
+
+            if (line.toLowerCase().startsWith("@data")) {
                 dataSection = true;
                 continue;
             }
-            if (!dataSection || line.trim().isEmpty())
-                continue;
 
-            String[] values = splitCSV(line);
-            if (values.length < 2)
-                continue; // skip malformed lines
-
-            appIds.add(values[0].trim());
-            descriptions.add(values[1].trim());
-            dataLines.add(line);
+            if (dataSection) {
+                dataLines.add(line);
+            }
         }
         reader.close();
 
         // Write relation header
         writer.write("@relation steam_game_data_decoded");
         writer.newLine();
-        writer.newLine();
-
-        // Write collected app_ids
-        writer.write("@attribute app_id {" + String.join(",", appIds) + "}");
-        writer.newLine();
-
-        // Write collected descriptions (quoted)
-        List<String> quotedDescriptions = new ArrayList<>();
-        // quote each description
-        for (String desc : descriptions) {
-            quotedDescriptions.add("'" + desc.replace("'", "") + "'");
-        }
-        writer.write("@attribute description {" + String.join(",", quotedDescriptions) + "}");
         writer.newLine();
 
         // Write new one-hot-decoded attributes
@@ -82,9 +63,8 @@ public class ARFFBinaryToNominal {
             String[] values = splitCSV(dataLine);
 
             StringBuilder newLine = new StringBuilder();
-            newLine.append(values[0]).append(",").append(values[1]);
 
-            int idx = 2;
+            int idx = 0;
             for (Map.Entry<String, Integer> entry : attributeGroups.entrySet()) {
                 int length = entry.getValue();
                 int oneIndex = -1;
@@ -96,7 +76,11 @@ public class ARFFBinaryToNominal {
                     }
                 }
 
-                newLine.append(",").append(oneIndex);
+                newLine.append(oneIndex);
+                if (entry != attributeGroups.entrySet().toArray()[attributeGroups.size() - 1]) {
+                    newLine.append(",");
+                }
+
                 idx += length;
             }
 
@@ -108,7 +92,6 @@ public class ARFFBinaryToNominal {
         System.out.println("ARFF transformation complete.");
     }
 
-    // Helper to create range like 0,1,2,...
     private static List<String> getRangeStrings(int n) {
         List<String> range = new ArrayList<>();
         for (int i = 0; i < n; i++) {
@@ -117,7 +100,6 @@ public class ARFFBinaryToNominal {
         return range;
     }
 
-    // Properly split CSV lines, handling quoted values
     private static String[] splitCSV(String line) {
         List<String> result = new ArrayList<>();
         boolean inQuotes = false;

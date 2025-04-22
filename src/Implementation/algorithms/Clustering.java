@@ -16,9 +16,10 @@ import java.util.ArrayList;
 public class Clustering {
     public static void main(String[] args) {
         try {
-            ConverterUtils.DataSource source = new ConverterUtils.DataSource("src/Implementation/algorithms/src.arff");
+            ConverterUtils.DataSource source = new ConverterUtils.DataSource(
+                    "src/Implementation/algorithms/src_removed.arff");
             Instances data = source.getDataSet();
-            Instances encodedData = encodeNominalToBinary(data, "3-8");
+            Instances encodedData = encodeNominalToBinary(data, "1-6");
             encodedData.setClassIndex(-1); // Unset class for unsupervised learning
 
             // Initialize SimpleKMeans clusterer

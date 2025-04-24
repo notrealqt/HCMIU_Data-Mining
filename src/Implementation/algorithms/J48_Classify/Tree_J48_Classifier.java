@@ -1,4 +1,4 @@
-package Implementation.algorithms;
+package Implementation.algorithms.J48_Classify;
 
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils;
@@ -13,7 +13,8 @@ public class Tree_J48_Classifier {
     public static void main(String[] args) {
         try {
             // Load dataset
-            ConverterUtils.DataSource source = new ConverterUtils.DataSource("src/Implementation/algorithms/src.arff");
+            ConverterUtils.DataSource source = new ConverterUtils.DataSource(
+                    "src/Implementation/algorithms/steam_game_data_encoded_improve.arff");
             Instances data = source.getDataSet();
 
             // === Keep only the selected attributes ===
@@ -28,7 +29,7 @@ public class Tree_J48_Classifier {
 
             // === Initialize J48 classifier ===
             J48 tree = new J48();
-            tree.setOptions(new String[] { "-U", "-M", "10" });
+            tree.setOptions(new String[] { "-C", "0.5", "-M", "10" });
 
             // === Cross-validate ===
             Evaluation eval = new Evaluation(filteredData);

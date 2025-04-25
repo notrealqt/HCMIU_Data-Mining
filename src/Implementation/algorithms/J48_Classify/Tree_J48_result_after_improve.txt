@@ -139,3 +139,6 @@ Weighted Avg.    0,791    0,061    ?          0,791    ?          ?        0,940
 
      
 
+Using k-means for each attributes in the dataset.
+The value of k is defined by using elbow method.
+The result is significant improving from 72.3481 % to 79.1373 % (6.7892%)

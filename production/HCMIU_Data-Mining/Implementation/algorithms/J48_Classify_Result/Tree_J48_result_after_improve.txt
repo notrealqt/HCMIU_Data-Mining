@@ -1,0 +1,144 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -A -C 0.5 -M 10
+Relation:     steam_game_data_encoded_improve-weka.filters.unsupervised.attribute.Remove-R1-2
+Instances:    50727
+Attributes:   6
+              price_encoded
+              release_year_encoded
+              all_reviews_encoded
+              all_percent_encoded
+              all_count_encoded
+              tags_encoded
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+all_count_encoded = 0: 0 (19989.0)
+all_count_encoded = 1
+|   all_percent_encoded = 0: 2 (458.0/133.0)
+|   all_percent_encoded = 1: 4 (9478.0/2564.0)
+|   all_percent_encoded = 2
+|   |   release_year_encoded = 0
+|   |   |   tags_encoded = 0
+|   |   |   |   price_encoded = 0: 7 (10.0/4.0)
+|   |   |   |   price_encoded = 1: 6 (30.0/15.0)
+|   |   |   |   price_encoded = 2: 5 (5.0/3.0)
+|   |   |   |   price_encoded = 3: 6 (0.0)
+|   |   |   tags_encoded = 1: 7 (29.0/8.0)
+|   |   |   tags_encoded = 2
+|   |   |   |   price_encoded = 0: 6 (14.0/6.0)
+|   |   |   |   price_encoded = 1: 7 (39.0/14.0)
+|   |   |   |   price_encoded = 2: 6 (1.0)
+|   |   |   |   price_encoded = 3: 7 (0.0)
+|   |   |   tags_encoded = 3: 6 (43.0/21.0)
+|   |   |   tags_encoded = 4: 7 (41.0/15.0)
+|   |   |   tags_encoded = 5: 7 (4.0/1.0)
+|   |   |   tags_encoded = 6: 6 (220.0/106.0)
+|   |   |   tags_encoded = 7: 6 (7.0/2.0)
+|   |   |   tags_encoded = 8: 6 (14.0/5.0)
+|   |   |   tags_encoded = 9: 6 (23.0/10.0)
+|   |   release_year_encoded = 1
+|   |   |   price_encoded = 0
+|   |   |   |   tags_encoded = 0: 6 (171.0/73.0)
+|   |   |   |   tags_encoded = 1: 7 (103.0/48.0)
+|   |   |   |   tags_encoded = 2: 7 (171.0/84.0)
+|   |   |   |   tags_encoded = 3: 6 (78.0/23.0)
+|   |   |   |   tags_encoded = 4: 7 (166.0/83.0)
+|   |   |   |   tags_encoded = 5: 7 (16.0/4.0)
+|   |   |   |   tags_encoded = 6: 6 (652.0/316.0)
+|   |   |   |   tags_encoded = 7: 7 (32.0/14.0)
+|   |   |   |   tags_encoded = 8: 6 (120.0/32.0)
+|   |   |   |   tags_encoded = 9: 6 (58.0/27.0)
+|   |   |   price_encoded = 1
+|   |   |   |   tags_encoded = 0: 6 (394.0/175.0)
+|   |   |   |   tags_encoded = 1: 7 (231.0/98.0)
+|   |   |   |   tags_encoded = 2: 7 (288.0/85.0)
+|   |   |   |   tags_encoded = 3: 7 (251.0/123.0)
+|   |   |   |   tags_encoded = 4: 7 (286.0/104.0)
+|   |   |   |   tags_encoded = 5: 6 (23.0/9.0)
+|   |   |   |   tags_encoded = 6: 7 (1662.0/787.0)
+|   |   |   |   tags_encoded = 7: 7 (74.0/23.0)
+|   |   |   |   tags_encoded = 8: 6 (1.0)
+|   |   |   |   tags_encoded = 9: 6 (216.0/100.0)
+|   |   |   price_encoded = 2: 6 (547.0/145.0)
+|   |   |   price_encoded = 3: 7 (3.0/1.0)
+|   |   release_year_encoded = 2
+|   |   |   tags_encoded = 0: 6 (1060.0/349.0)
+|   |   |   tags_encoded = 1: 6 (1165.0/397.0)
+|   |   |   tags_encoded = 2: 7 (892.0/437.0)
+|   |   |   tags_encoded = 3: 6 (1098.0/302.0)
+|   |   |   tags_encoded = 4
+|   |   |   |   price_encoded = 0: 7 (292.0/146.0)
+|   |   |   |   price_encoded = 1: 6 (493.0/219.0)
+|   |   |   |   price_encoded = 2: 7 (17.0/3.0)
+|   |   |   |   price_encoded = 3: 6 (5.0)
+|   |   |   tags_encoded = 5
+|   |   |   |   price_encoded = 0: 7 (117.0/49.0)
+|   |   |   |   price_encoded = 1: 6 (194.0/58.0)
+|   |   |   |   price_encoded = 2: 6 (1.0)
+|   |   |   |   price_encoded = 3: 6 (0.0)
+|   |   |   tags_encoded = 6: 6 (6183.0/2150.0)
+|   |   |   tags_encoded = 7
+|   |   |   |   price_encoded = 0: 6 (710.0/346.0)
+|   |   |   |   price_encoded = 1: 6 (1102.0/398.0)
+|   |   |   |   price_encoded = 2: 7 (11.0/2.0)
+|   |   |   |   price_encoded = 3: 7 (13.0/2.0)
+|   |   |   tags_encoded = 8: 6 (910.0/193.0)
+|   |   |   tags_encoded = 9: 6 (489.0/189.0)
+all_count_encoded = 2: 6 (26.0/6.0)
+all_count_encoded = 3: 6 (1.0)
+all_count_encoded = 4: 0 (0.0)
+
+Number of Leaves  : 	63
+
+Size of the tree : 	76
+
+
+Time taken to build model: 0.05 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       40144               79.1373 %
+Incorrectly Classified Instances     10583               20.8627 %
+Kappa statistic                          0.708 
+Mean absolute error                      0.0708
+Root mean squared error                  0.1872
+Relative absolute error                 39.2142 %
+Root relative squared error             62.3424 %
+Total Number of Instances            50727     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     0
+                 0,000    0,000    ?          0,000    ?          ?        0,980     0,003     1
+                 0,396    0,003    0,710      0,396    0,509      0,525    0,926     0,339     2
+                 0,000    0,000    ?          0,000    ?          ?        0,997     0,263     3
+                 1,000    0,059    0,729      1,000    0,843      0,829    0,970     0,722     4
+                 0,000    0,000    ?          0,000    ?          ?        0,831     0,048     5
+                 0,716    0,159    0,643      0,716    0,678      0,541    0,876     0,661     6
+                 0,335    0,050    0,543      0,335    0,414      0,352    0,889     0,497     7
+Weighted Avg.    0,791    0,061    ?          0,791    ?          ?        0,940     0,762     
+
+=== Confusion Matrix ===
+
+     a     b     c     d     e     f     g     h   <-- classified as
+ 19989     0     0     0     0     0     0     0 |     a = 0
+     0     0     5     0     0     0     0     0 |     b = 1
+     0     0   325     0   458     0    35     2 |     c = 2
+     0     0   128     0     0     0     0     0 |     d = 3
+     0     0     0     0  6914     0     2     0 |     e = 4
+     0     0     0     0     0     0   659   131 |     f = 5
+     1     0     0     0  2106     0 10373  2004 |     g = 6
+     0     0     0     0     0     0  5052  2543 |     h = 7
+
+     
+
+Using k-means for each attributes in the dataset.
+The value of k is defined by using elbow method.
+The result is significant improving from 72.3481 % to 79.1373 % (6.7892%)

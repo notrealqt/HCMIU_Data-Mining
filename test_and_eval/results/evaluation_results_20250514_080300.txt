@@ -1,0 +1,140 @@
+Model Evaluation Results
+======================
+Timestamp: Wed May 14 08:03:00 ICT 2025
+
+Dataset Information:
+Total instances: 50727
+Training instances: 40582
+Test instances: 10145
+Number of attributes: 6
+Number of classes: 11
+
+Naive Bayes Results:
+-------------------
+Accuracy: 72.21%
+Kappa statistic: 0.6504
+Mean absolute error: 0.0692
+Root mean squared error: 0.1860
+
+Confusion Matrix:
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f    g    h    i    j    k   <-- classified as
+    5  837    0    0    0    0    0    0    0    0    0 |    a = 0
+    3 3080    0    0    0    0    0    0    0    0    0 |    b = 1
+    0    0    0    0    0    1    0    0    0    0    0 |    c = 2
+    0    0    0    0    0    1    0    0    0    0    0 |    d = 3
+    0    0    0    0   60    0  116    0    0    0    0 |    e = 4
+    0    0    0    0    0   18    0    0    0    0    0 |    f = 5
+    0    0    0    0   54    0 1023    0  323    0    0 |    g = 6
+    0    0    0    0    0    0    0   10    0   62   74 |    h = 7
+    0    0    0    0    0    0    0    0 1121    0    0 |    i = 8
+    0    0    0    0    0    0    0    5   79 1137  634 |    j = 9
+    0    0    0    0    0    0    0    0   91  539  872 |    k = 10
+
+
+OneR Results:
+------------
+Accuracy: 70.54%
+Kappa statistic: 0.6282
+Mean absolute error: 0.0536
+Root mean squared error: 0.2314
+
+Confusion Matrix:
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f    g    h    i    j    k   <-- classified as
+    0  842    0    0    0    0    0    0    0    0    0 |    a = 0
+    0 3083    0    0    0    0    0    0    0    0    0 |    b = 1
+    0    1    0    0    0    0    0    0    0    0    0 |    c = 2
+    0    1    0    0    0    0    0    0    0    0    0 |    d = 3
+    0    0    0    0    0    0  176    0    0    0    0 |    e = 4
+    0   18    0    0    0    0    0    0    0    0    0 |    f = 5
+    0    0    0    0    0    0 1077    0  323    0    0 |    g = 6
+    0    0    0    0    0    0    0    0    0    0  146 |    h = 7
+    0    0    0    0    0    0    0    0 1121    0    0 |    i = 8
+    0    0    0    0    0    0    0    0   79 1140  636 |    j = 9
+    0    0    0    0    0    0    0    0   91  676  735 |    k = 10
+
+
+J48 Results:
+------------
+Accuracy: 72.24%
+Kappa statistic: 0.6499
+Mean absolute error: 0.0699
+Root mean squared error: 0.1868
+
+Confusion Matrix:
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f    g    h    i    j    k   <-- classified as
+    0  842    0    0    0    0    0    0    0    0    0 |    a = 0
+    0 3083    0    0    0    0    0    0    0    0    0 |    b = 1
+    0    0    0    0    0    1    0    0    0    0    0 |    c = 2
+    0    0    0    0    0    1    0    0    0    0    0 |    d = 3
+    0    0    0    0    0    0  176    0    0    0    0 |    e = 4
+    0    0    0    0    0   18    0    0    0    0    0 |    f = 5
+    0    0    0    0    0    0 1077    0  322    1    0 |    g = 6
+    0    0    0    0    0    0    0   10    0   70   66 |    h = 7
+    0    0    0    0    0    0    0    0 1121    0    0 |    i = 8
+    0    1    0    0    0    0    0    6   79 1206  563 |    j = 9
+    0    0    0    0    0    0    0    0   91  597  814 |    k = 10
+
+
+Class-wise Performance:
+---------------------
+
+Class 0:
+Naive Bayes - Precision: 0.6250, Recall: 0.0059, F1: 0.0118
+OneR - Precision: NaN, Recall: 0.0000, F1: NaN
+J48 - Precision: NaN, Recall: 0.0000, F1: NaN
+
+Class 1:
+Naive Bayes - Precision: 0.7863, Recall: 0.9990, F1: 0.8800
+OneR - Precision: 0.7815, Recall: 1.0000, F1: 0.8773
+J48 - Precision: 0.7853, Recall: 1.0000, F1: 0.8797
+
+Class 2:
+Naive Bayes - Precision: NaN, Recall: 0.0000, F1: NaN
+OneR - Precision: NaN, Recall: 0.0000, F1: NaN
+J48 - Precision: NaN, Recall: 0.0000, F1: NaN
+
+Class 3:
+Naive Bayes - Precision: NaN, Recall: 0.0000, F1: NaN
+OneR - Precision: NaN, Recall: 0.0000, F1: NaN
+J48 - Precision: NaN, Recall: 0.0000, F1: NaN
+
+Class 4:
+Naive Bayes - Precision: 0.5263, Recall: 0.3409, F1: 0.4138
+OneR - Precision: NaN, Recall: 0.0000, F1: NaN
+J48 - Precision: NaN, Recall: 0.0000, F1: NaN
+
+Class 5:
+Naive Bayes - Precision: 0.9000, Recall: 1.0000, F1: 0.9474
+OneR - Precision: NaN, Recall: 0.0000, F1: NaN
+J48 - Precision: 0.9000, Recall: 1.0000, F1: 0.9474
+
+Class 6:
+Naive Bayes - Precision: 0.8982, Recall: 0.7307, F1: 0.8058
+OneR - Precision: 0.8595, Recall: 0.7693, F1: 0.8119
+J48 - Precision: 0.8595, Recall: 0.7693, F1: 0.8119
+
+Class 7:
+Naive Bayes - Precision: 0.6667, Recall: 0.0685, F1: 0.1242
+OneR - Precision: NaN, Recall: 0.0000, F1: NaN
+J48 - Precision: 0.6250, Recall: 0.0685, F1: 0.1235
+
+Class 8:
+Naive Bayes - Precision: 0.6945, Recall: 1.0000, F1: 0.8197
+OneR - Precision: 0.6945, Recall: 1.0000, F1: 0.8197
+J48 - Precision: 0.6950, Recall: 1.0000, F1: 0.8200
+
+Class 9:
+Naive Bayes - Precision: 0.6542, Recall: 0.6129, F1: 0.6329
+OneR - Precision: 0.6278, Recall: 0.6146, F1: 0.6211
+J48 - Precision: 0.6435, Recall: 0.6501, F1: 0.6468
+
+Class 10:
+Naive Bayes - Precision: 0.5519, Recall: 0.5806, F1: 0.5659
+OneR - Precision: 0.4845, Recall: 0.4893, F1: 0.4869
+J48 - Precision: 0.5641, Recall: 0.5419, F1: 0.5528

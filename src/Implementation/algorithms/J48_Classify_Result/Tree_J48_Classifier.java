@@ -1,4 +1,4 @@
-package Implementation.algorithms.J48_Classify;
+package Implementation.algorithms.J48_Classify_Result;
 
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils;

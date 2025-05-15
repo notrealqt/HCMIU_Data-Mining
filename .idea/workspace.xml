@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="904aea8c-0d8b-4897-b1f9-de9a75cc1e4f" name="Changes" comment="Add an association rule">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/weka.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/production/HCMIU_Data-Mining/Implementation/algorithms/J48_Classify/Tree_J48_Classifier.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/production/HCMIU_Data-Mining/Implementation/algorithms/J48_Classify_Result/Tree_J48_result_after_improve.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/production/HCMIU_Data-Mining/Implementation/algorithms/J48_Classify_Result/Tree_J48_result_before_improve.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/production/HCMIU_Data-Mining/Implementation/algorithms/J48_Classify_Result/Tree_Visualizer.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/production/HCMIU_Data-Mining/Implementation/algorithms/steam_game_data_encoded_improve.arff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/production/HCMIU_Data-Mining/Implementation/association/AprioriAlgorithm.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/production/HCMIU_Data-Mining/Implementation/association/steam_game_review_encoded_part_1.arff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Implementation/association/steam_game_review_encoded_part_1.arff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Implementation/association/AprioriAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Implementation/association/AprioriAlgorithm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +33,21 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;hurricanq&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/notrealqt/HCMIU_Data-Mining.git&quot;,
+    &quot;accountId&quot;: &quot;2eb94fb5-2586-4ef5-a9ec-f7f50a34bb90&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -50,6 +58,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.AprioriAlgorithm.executor": "Run",
     "Application.IncrementalClassifier.executor": "Run",
     "Application.naiveBayes_Classification.executor": "Run",
     "Application.oneR_Classification.executor": "Run",
@@ -60,7 +69,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "ndkhoi",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Program Files/Weka-3-8-6/weka.jar",
+    "last_opened_file_path": "C:/Users/Admin/Documents/D Drive Files/Fullstack/Projects/HCMIU_Data-Mining",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -77,11 +86,24 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\HCMIU_Data-Mining\src\Implementation\algorithms" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Documents\D Drive Files\Fullstack\Projects\HCMIU_Data-Mining\src\Implementation\association" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Implementation.algorithms" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.AprioriAlgorithm">
+    <configuration name="AprioriAlgorithm" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="22" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="Implementation.association.AprioriAlgorithm" />
+      <module name="HCMIU_Data-Mining" />
+      <option name="VM_PARAMETERS" value="--add-opens java.base/java.lang=ALL-UNNAMED" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="oneR_Classification" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Implementation.algorithms.oneR_Classification" />
       <module name="HCMIU_Data-Mining" />
@@ -95,6 +117,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.AprioriAlgorithm" />
+      <item itemvalue="Application.oneR_Classification" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.oneR_Classification" />
@@ -104,8 +130,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
-        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.129" />
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129" />
       </set>
     </attachedChunks>
   </component>
@@ -124,7 +150,8 @@
       <workItem from="1745033022102" duration="947000" />
       <workItem from="1745034452180" duration="445000" />
       <workItem from="1745072881068" duration="548000" />
-      <workItem from="1747101243869" duration="587000" />
+      <workItem from="1747101243869" duration="1019000" />
+      <workItem from="1747307761019" duration="4365000" />
     </task>
     <task id="LOCAL-00001" summary="Add an association rule">
       <option name="closed" value="true" />
@@ -134,7 +161,23 @@
       <option name="project" value="LOCAL" />
       <updated>1747101737344</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add an association rule">
+      <option name="closed" value="true" />
+      <created>1747101929636</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1747101929636</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add an association rule">
+      <option name="closed" value="true" />
+      <created>1747101966158</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1747101966158</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

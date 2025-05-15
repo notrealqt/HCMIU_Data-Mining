@@ -1,0 +1,37 @@
+=== OneR Classifier Results (after) ===
+Accuracy: 77.44%
+
+Correctly Classified Instances       39282               77.4381 %
+Incorrectly Classified Instances     11445               22.5619 %
+Kappa statistic                          0.677 
+Mean absolute error                      0.0564
+Root mean squared error                  0.2375
+Relative absolute error                 31.2618 %
+Root relative squared error             79.0734 %
+Total Number of Instances            50727     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.015    0.978      1.000    0.989      0.981    0.993     0.978     0
+                 0.000    0.000    ?          0.000    ?          ?        0.500     0.000     1
+                 0.000    0.000    ?          0.000    ?          ?        0.500     0.016     2
+                 0.000    0.000    ?          0.000    ?          ?        0.500     0.003     3
+                 1.000    0.059    0.729      1.000    0.844      0.829    0.971     0.729     4
+                 0.000    0.000    ?          0.000    ?          ?        0.500     0.016     5
+                 0.855    0.232    0.595      0.855    0.702      0.571    0.811     0.550     6
+                 0.000    0.000    ?          0.000    ?          ?        0.500     0.150     7
+Weighted Avg.    0.774    0.080    ?          0.774    ?          ?        0.847     0.665     
+
+=== Confusion Matrix ===
+
+     a     b     c     d     e     f     g     h   <-- classified as
+ 19989     0     0     0     0     0     0     0 |     a = 0
+     5     0     0     0     0     0     0     0 |     b = 1
+   325     0     0     0   458     0    37     0 |     c = 2
+   128     0     0     0     0     0     0     0 |     d = 3
+     0     0     0     0  6916     0     0     0 |     e = 4
+     0     0     0     0     0     0   790     0 |     f = 5
+     0     0     0     0  2107     0 12377     0 |     g = 6
+     0     0     0     0     0     0  7595     0 |     h = 7
+

@@ -1,0 +1,30 @@
+=== Association Rules (Apriori) (before) ===
+
+Apriori
+=======
+
+Minimum support: 0.25 (12682 instances)
+Minimum metric <confidence>: 0.9
+Number of cycles performed: 15
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 8
+
+Size of set of large itemsets L(2): 11
+
+Size of set of large itemsets L(3): 3
+
+Best rules found:
+
+ 1. all_count_encoded=0 19989 ==> all_percent_encoded=0 19989    <conf:(1)> lift:(2.52) lev:(0.24) [12055] conv:(12055.58)
+ 2. all_reviews_encoded=1 15754 ==> all_percent_encoded=0 15754    <conf:(1)> lift:(2.52) lev:(0.19) [9501] conv:(9501.41)
+ 3. all_reviews_encoded=1 15754 ==> all_count_encoded=0 15754    <conf:(1)> lift:(2.54) lev:(0.19) [9546] conv:(9546.13)
+ 4. all_reviews_encoded=1 all_count_encoded=0 15754 ==> all_percent_encoded=0 15754    <conf:(1)> lift:(2.52) lev:(0.19) [9501] conv:(9501.41)
+ 5. all_reviews_encoded=1 all_percent_encoded=0 15754 ==> all_count_encoded=0 15754    <conf:(1)> lift:(2.54) lev:(0.19) [9546] conv:(9546.13)
+ 6. all_reviews_encoded=1 15754 ==> all_percent_encoded=0 all_count_encoded=0 15754    <conf:(1)> lift:(2.54) lev:(0.19) [9546] conv:(9546.13)
+ 7. release_year_encoded=6 all_count_encoded=0 14265 ==> all_percent_encoded=0 14265    <conf:(1)> lift:(2.52) lev:(0.17) [8603] conv:(8603.38)
+ 8. price_encoded=1 all_count_encoded=0 14004 ==> all_percent_encoded=0 14004    <conf:(1)> lift:(2.52) lev:(0.17) [8445] conv:(8445.96)
+ 9. price_encoded=1 all_percent_encoded=0 14097 ==> all_count_encoded=0 14004    <conf:(0.99)> lift:(2.52) lev:(0.17) [8449] conv:(90.87)
+10. all_percent_encoded=0 20133 ==> all_count_encoded=0 19989    <conf:(0.99)> lift:(2.52) lev:(0.24) [12055] conv:(84.14)
+

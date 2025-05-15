@@ -1,0 +1,43 @@
+=== J48 Decision Tree Classifier Results (before) ===
+Accuracy: 72.35%
+
+Correctly Classified Instances       36700               72.3481 %
+Incorrectly Classified Instances     14027               27.6519 %
+Kappa statistic                          0.6511
+Mean absolute error                      0.0692
+Root mean squared error                  0.1866
+Relative absolute error                 46.8546 %
+Root relative squared error             68.6835 %
+Total Number of Instances            50727     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.026    0.001    0.631      0.026    0.050      0.117    0.848     0.251     0
+                 0.996    0.118    0.792      0.996    0.882      0.833    0.946     0.816     1
+                 0.000    0.000    ?          0.000    ?          ?        0.998     0.032     2
+                 0.000    0.000    ?          0.000    ?          ?        0.999     0.070     3
+                 0.253    0.004    0.502      0.253    0.337      0.350    0.989     0.498     4
+                 1.000    0.000    0.889      1.000    0.941      0.943    1.000     0.873     5
+                 0.736    0.014    0.894      0.736    0.807      0.785    0.976     0.895     6
+                 0.070    0.001    0.585      0.070    0.124      0.198    0.945     0.202     7
+                 0.999    0.055    0.689      0.999    0.816      0.807    0.972     0.682     8
+                 0.646    0.082    0.628      0.646    0.637      0.558    0.926     0.669     9
+                 0.541    0.071    0.573      0.541    0.557      0.481    0.913     0.556     10
+Weighted Avg.    0.723    0.070    ?          0.723    ?          ?        0.937     0.685     
+
+=== Confusion Matrix ===
+
+     a     b     c     d     e     f     g     h     i     j     k   <-- classified as
+   111  4124     0     0     0     0     0     0     0     0     0 |     a = 0
+    65 15689     0     0     0     0     0     0     0     0     0 |     b = 1
+     0     0     0     0     0     5     0     0     0     0     0 |     c = 2
+     0     0     0     0     0    11     0     0     0     0     0 |     d = 3
+     0     0     0     0   205     0   604     0     0     0     0 |     e = 4
+     0     0     0     0     0   128     0     0     0     0     0 |     f = 5
+     0     0     0     0   203     0  5089     0  1622     2     0 |     g = 6
+     0     0     0     0     0     0     0    55     0   394   341 |     h = 7
+     0     0     0     0     0     0     0     2  5546     1     0 |     i = 8
+     0     1     0     0     0     0     1    33   413  5770  2717 |     j = 9
+     0     0     0     0     0     0     0     4   463  3021  4107 |     k = 10
+

@@ -1,0 +1,2 @@
+=== Association Rules (Apriori) Training Results for steam_game_review_encoded_part_4 ===
+Association Rules could not be generated: weka.associations.Apriori: Cannot handle numeric attributes!

@@ -44,3 +44,7 @@ Weighted Avg.    0.774    0.080    ?          0.774    ?          ?        0.847
      0     0     0     0  2107     0 12377     0 |     g = 6
      0     0     0     0     0     0  7595     0 |     h = 7
 
+
+Build time: 0.01 seconds
+Evaluation time: 0.29 seconds
+Total execution time: 1.00 seconds

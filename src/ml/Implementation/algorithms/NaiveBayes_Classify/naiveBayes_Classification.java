@@ -1,4 +1,5 @@
-package Implementation.algorithms;
+// This file should be moved to src/ml/Implementation/algorithms/naiveBayes_Classification.java
+package Implementation.algorithms.NaiveBayes_Classify;
 
 import weka.classifiers.Evaluation;
 import weka.classifiers.bayes.NaiveBayes;
@@ -13,16 +14,18 @@ import java.io.PrintWriter;
 
 public class naiveBayes_Classification {
     public static void main(String[] args){
+        long totalStartTime = System.currentTimeMillis();
         // Only use the games ARFF files for Naive Bayes
         String[] arffFiles = {
-            "data/processed/games/steam_game_data_encoded.arff", // before improvement
-            "data/processed/games/steam_game_data_encoded_improve.arff" // after improvement
+            "./data/processed/games/steam_game_data_encoded.arff", // before improvement
+            "./data/processed/games/steam_game_data_encoded_improve.arff" // after improvement
         };
         String[] tags = {"before", "after"};
         for (int i = 0; i < arffFiles.length; i++) {
+            long startTime = System.currentTimeMillis();
             String datasetPath = arffFiles[i];
             String tag = tags[i];
-            String outDir = "results/reports/" + tag + "/";
+            String outDir = "./results/reports/" + tag + "/";
             try {
                 ConverterUtils.DataSource source = new ConverterUtils.DataSource(datasetPath);
                 Instances data = source.getDataSet();
@@ -37,10 +40,14 @@ public class naiveBayes_Classification {
                 finalData.setClassIndex(finalData.numAttributes() - 4);
 
                 NaiveBayes classifier = new NaiveBayes();
+                long buildStartTime = System.currentTimeMillis();
                 classifier.buildClassifier(finalData);
+                long buildEndTime = System.currentTimeMillis();
 
                 Evaluation evaluation = new Evaluation(finalData);
+                long evalStartTime = System.currentTimeMillis();
                 evaluation.crossValidateModel(classifier, finalData, 10, new Random(1));
+                long evalEndTime = System.currentTimeMillis();
 
                 // Write results to file
                 try (PrintWriter out = new PrintWriter(new FileWriter(outDir + "naive_bayes_train.txt"))) {
@@ -51,6 +58,11 @@ public class naiveBayes_Classification {
                     out.println(evaluation.toSummaryString());
                     out.println(evaluation.toClassDetailsString());
                     out.println(evaluation.toMatrixString());
+                    
+                    long endTime = System.currentTimeMillis();
+                    out.printf("\nBuild time: %.2f seconds\n", (buildEndTime - buildStartTime) / 1000.0);
+                    out.printf("Evaluation time: %.2f seconds\n", (evalEndTime - evalStartTime) / 1000.0);
+                    out.printf("Total execution time: %.2f seconds\n", (endTime - startTime) / 1000.0);
                 }
                 System.out.println("Naive Bayes training results saved to " + outDir + "naive_bayes_train.txt");
 
@@ -58,5 +70,7 @@ public class naiveBayes_Classification {
                 e.printStackTrace();
             }
         }
+        long totalEndTime = System.currentTimeMillis();
+        System.out.println("Total execution time: " + (totalEndTime - totalStartTime) / 1000.0 + " seconds");
     }
 } 

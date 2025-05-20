@@ -1,2 +1,0 @@
-=== Association Rules (Apriori) (after) ===
-Association Rules could not be generated: weka.associations.Apriori: Cannot handle numeric attributes!

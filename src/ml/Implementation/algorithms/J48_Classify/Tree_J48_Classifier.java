@@ -1,3 +1,4 @@
+// This file should be moved to src/ml/Implementation/algorithms/J48_Classify/Tree_J48_Classifier.java
 package Implementation.algorithms.J48_Classify;
 
 import weka.core.Instances;
@@ -13,6 +14,7 @@ import java.io.PrintWriter;
 
 public class Tree_J48_Classifier {
     public static void main(String[] args) {
+        long totalStartTime = System.currentTimeMillis();
         // Only use the games ARFF files for J48
         String[] arffFiles = {
             "data/processed/games/steam_game_data_encoded.arff", // before improvement
@@ -20,6 +22,7 @@ public class Tree_J48_Classifier {
         };
         String[] tags = {"before", "after"};
         for (int i = 0; i < arffFiles.length; i++) {
+            long startTime = System.currentTimeMillis();
             String datasetPath = arffFiles[i];
             String tag = tags[i];
             String outDir = "results/reports/" + tag + "/";
@@ -57,6 +60,9 @@ public class Tree_J48_Classifier {
                     out.println(eval.toSummaryString());
                     out.println(eval.toClassDetailsString());
                     out.println(eval.toMatrixString());
+                    
+                    long endTime = System.currentTimeMillis();
+                    out.printf("\nExecution time: %.2f seconds\n", (endTime - startTime) / 1000.0);
                 }
                 System.out.println("J48 training results saved to " + outDir + "j48_train.txt");
 
@@ -64,5 +70,7 @@ public class Tree_J48_Classifier {
                 e.printStackTrace();
             }
         }
+        long totalEndTime = System.currentTimeMillis();
+        System.out.println("Total execution time: " + (totalEndTime - totalStartTime) / 1000.0 + " seconds");
     }
 } 

@@ -56,17 +56,4 @@ The project uses ARFF (Attribute-Relation File Format) files for data processing
    ```
 
 ## Results
-Classification results are stored in the `results/` directory, organized by classifier type.
-
-## Contributing
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
-
-## License
-[Add your license information here]
-
-## Contact
-[Add your contact information here]
+Classification results are stored in the `results/` directory, organized by classifier type

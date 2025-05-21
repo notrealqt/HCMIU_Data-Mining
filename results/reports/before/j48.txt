@@ -1,0 +1,257 @@
+=== J48 Decision Tree Classifier Training Results (before) ===
+Classifier: 
+J48 pruned tree
+------------------
+
+all_count_encoded = 0
+|   price_encoded <= 3: 1 (19537.0/4044.0)
+|   price_encoded > 3
+|   |   release_year_encoded = 1: 1 (1.0)
+|   |   release_year_encoded = 2: 1 (5.0/2.0)
+|   |   release_year_encoded = 3: 1 (8.0/1.0)
+|   |   release_year_encoded = 4: 1 (12.0/2.0)
+|   |   release_year_encoded = 5
+|   |   |   tags_encoded = 0: 1 (12.0/4.0)
+|   |   |   tags_encoded = 1: 1 (12.0/3.0)
+|   |   |   tags_encoded = 2: 0 (26.0/8.0)
+|   |   |   tags_encoded = 3: 1 (28.0/6.0)
+|   |   |   tags_encoded = 4: 0 (11.0/4.0)
+|   |   |   tags_encoded = 5: 1 (11.0/3.0)
+|   |   |   tags_encoded = 6: 1 (89.0/24.0)
+|   |   |   tags_encoded = 7: 0 (7.0/3.0)
+|   |   |   tags_encoded = 8: 1 (0.0)
+|   |   |   tags_encoded = 9: 1 (30.0/8.0)
+|   |   release_year_encoded = 6
+|   |   |   tags_encoded = 0: 1 (6.0/1.0)
+|   |   |   tags_encoded = 1: 1 (22.0/10.0)
+|   |   |   tags_encoded = 2: 0 (17.0/6.0)
+|   |   |   tags_encoded = 3: 0 (27.0/10.0)
+|   |   |   tags_encoded = 4: 1 (6.0/2.0)
+|   |   |   tags_encoded = 5: 1 (4.0/1.0)
+|   |   |   tags_encoded = 6: 0 (92.0/34.0)
+|   |   |   tags_encoded = 7: 0 (10.0/4.0)
+|   |   |   tags_encoded = 8: 0 (0.0)
+|   |   |   tags_encoded = 9: 1 (16.0/3.0)
+all_count_encoded = 1
+|   all_percent_encoded = 0: 5 (144.0/16.0)
+|   all_percent_encoded = 1
+|   |   price_encoded <= 0: 6 (609.0/257.0)
+|   |   price_encoded > 0
+|   |   |   release_year_encoded = 1: 6 (1.0)
+|   |   |   release_year_encoded = 2: 4 (5.0/2.0)
+|   |   |   release_year_encoded = 3: 6 (9.0/3.0)
+|   |   |   release_year_encoded = 4: 4 (13.0/6.0)
+|   |   |   release_year_encoded = 5
+|   |   |   |   tags_encoded = 0: 6 (19.0/7.0)
+|   |   |   |   tags_encoded = 1: 4 (12.0/6.0)
+|   |   |   |   tags_encoded = 2: 6 (5.0/2.0)
+|   |   |   |   tags_encoded = 3: 6 (30.0/14.0)
+|   |   |   |   tags_encoded = 4: 6 (16.0/7.0)
+|   |   |   |   tags_encoded = 5: 6 (0.0)
+|   |   |   |   tags_encoded = 6
+|   |   |   |   |   price_encoded <= 2: 4 (42.0/19.0)
+|   |   |   |   |   price_encoded > 2: 6 (17.0/4.0)
+|   |   |   |   tags_encoded = 7: 6 (5.0/2.0)
+|   |   |   |   tags_encoded = 8: 6 (0.0)
+|   |   |   |   tags_encoded = 9: 4 (17.0/6.0)
+|   |   |   release_year_encoded = 6
+|   |   |   |   tags_encoded = 0: 6 (53.0/23.0)
+|   |   |   |   tags_encoded = 1
+|   |   |   |   |   price_encoded <= 1: 4 (46.0/15.0)
+|   |   |   |   |   price_encoded > 1: 6 (26.0/9.0)
+|   |   |   |   tags_encoded = 2: 6 (26.0/12.0)
+|   |   |   |   tags_encoded = 3: 4 (201.0/88.0)
+|   |   |   |   tags_encoded = 4: 4 (22.0/9.0)
+|   |   |   |   tags_encoded = 5: 4 (8.0/4.0)
+|   |   |   |   tags_encoded = 6: 6 (288.0/138.0)
+|   |   |   |   tags_encoded = 7
+|   |   |   |   |   price_encoded <= 1: 6 (136.0/66.0)
+|   |   |   |   |   price_encoded > 1: 4 (36.0/13.0)
+|   |   |   |   tags_encoded = 8: 4 (1.0)
+|   |   |   |   tags_encoded = 9: 6 (66.0/30.0)
+|   all_percent_encoded = 2: 6 (4386.0)
+|   all_percent_encoded = 3: 8 (8015.0/2490.0)
+|   all_percent_encoded = 4
+|   |   price_encoded <= 1
+|   |   |   release_year_encoded = 1: 9 (5.0/1.0)
+|   |   |   release_year_encoded = 2: 10 (22.0/6.0)
+|   |   |   release_year_encoded = 3: 10 (40.0/16.0)
+|   |   |   release_year_encoded = 4: 10 (148.0/61.0)
+|   |   |   release_year_encoded = 5
+|   |   |   |   tags_encoded = 0
+|   |   |   |   |   price_encoded <= 0: 10 (51.0/23.0)
+|   |   |   |   |   price_encoded > 0: 9 (98.0/47.0)
+|   |   |   |   tags_encoded = 1: 10 (91.0/34.0)
+|   |   |   |   tags_encoded = 2: 10 (123.0/38.0)
+|   |   |   |   tags_encoded = 3
+|   |   |   |   |   price_encoded <= 0: 9 (24.0/7.0)
+|   |   |   |   |   price_encoded > 0: 10 (70.0/29.0)
+|   |   |   |   tags_encoded = 4: 10 (135.0/45.0)
+|   |   |   |   tags_encoded = 5: 10 (9.0/2.0)
+|   |   |   |   tags_encoded = 6: 10 (580.0/256.0)
+|   |   |   |   tags_encoded = 7: 10 (33.0/10.0)
+|   |   |   |   tags_encoded = 8: 9 (37.0/12.0)
+|   |   |   |   tags_encoded = 9
+|   |   |   |   |   price_encoded <= 0: 10 (16.0/7.0)
+|   |   |   |   |   price_encoded > 0: 9 (38.0/18.0)
+|   |   |   release_year_encoded = 6
+|   |   |   |   tags_encoded = 0: 9 (424.0/152.0)
+|   |   |   |   tags_encoded = 1: 9 (450.0/187.0)
+|   |   |   |   tags_encoded = 2: 10 (336.0/153.0)
+|   |   |   |   tags_encoded = 3: 9 (403.0/141.0)
+|   |   |   |   tags_encoded = 4: 10 (308.0/135.0)
+|   |   |   |   tags_encoded = 5
+|   |   |   |   |   price_encoded <= 0: 10 (53.0/15.0)
+|   |   |   |   |   price_encoded > 0: 9 (50.0/21.0)
+|   |   |   |   tags_encoded = 6: 9 (2104.0/847.0)
+|   |   |   |   tags_encoded = 7
+|   |   |   |   |   price_encoded <= 0: 10 (339.0/154.0)
+|   |   |   |   |   price_encoded > 0: 9 (414.0/185.0)
+|   |   |   |   tags_encoded = 8: 9 (422.0/98.0)
+|   |   |   |   tags_encoded = 9: 9 (163.0/71.0)
+|   |   price_encoded > 1: 9 (1921.0/413.0)
+|   all_percent_encoded = 5
+|   |   tags_encoded = 0
+|   |   |   release_year_encoded = 1: 10 (1.0)
+|   |   |   release_year_encoded = 2: 9 (3.0/1.0)
+|   |   |   release_year_encoded = 3: 10 (7.0/3.0)
+|   |   |   release_year_encoded = 4: 9 (18.0/9.0)
+|   |   |   release_year_encoded = 5
+|   |   |   |   price_encoded <= 0: 9 (55.0/20.0)
+|   |   |   |   price_encoded > 0
+|   |   |   |   |   price_encoded <= 2: 10 (114.0/56.0)
+|   |   |   |   |   price_encoded > 2: 9 (26.0/13.0)
+|   |   |   release_year_encoded = 6: 9 (467.0/228.0)
+|   |   tags_encoded = 1
+|   |   |   price_encoded <= 1: 10 (355.0/136.0)
+|   |   |   price_encoded > 1: 9 (80.0/39.0)
+|   |   tags_encoded = 2: 10 (666.0/227.0)
+|   |   tags_encoded = 3
+|   |   |   release_year_encoded = 1: 10 (1.0)
+|   |   |   release_year_encoded = 2: 10 (5.0/2.0)
+|   |   |   release_year_encoded = 3: 10 (1.0)
+|   |   |   release_year_encoded = 4: 10 (8.0/4.0)
+|   |   |   release_year_encoded = 5
+|   |   |   |   price_encoded <= 0: 9 (15.0/8.0)
+|   |   |   |   price_encoded > 0: 10 (74.0/30.0)
+|   |   |   release_year_encoded = 6
+|   |   |   |   price_encoded <= 3
+|   |   |   |   |   price_encoded <= 1
+|   |   |   |   |   |   price_encoded <= 0: 9 (78.0/36.0)
+|   |   |   |   |   |   price_encoded > 0: 10 (144.0/75.0)
+|   |   |   |   |   price_encoded > 1: 9 (53.0/24.0)
+|   |   |   |   price_encoded > 3: 10 (12.0/2.0)
+|   |   tags_encoded = 4
+|   |   |   price_encoded <= 1: 10 (449.0/173.0)
+|   |   |   price_encoded > 1
+|   |   |   |   price_encoded <= 2: 9 (37.0/20.0)
+|   |   |   |   price_encoded > 2: 10 (55.0/26.0)
+|   |   tags_encoded = 5
+|   |   |   price_encoded <= 0: 10 (42.0/16.0)
+|   |   |   price_encoded > 0: 9 (65.0/27.0)
+|   |   tags_encoded = 6
+|   |   |   price_encoded <= 1
+|   |   |   |   release_year_encoded = 1: 9 (2.0)
+|   |   |   |   release_year_encoded = 2: 10 (9.0/3.0)
+|   |   |   |   release_year_encoded = 3: 10 (23.0/5.0)
+|   |   |   |   release_year_encoded = 4
+|   |   |   |   |   price_encoded <= 0: 9 (18.0/9.0)
+|   |   |   |   |   price_encoded > 0: 10 (50.0/15.0)
+|   |   |   |   release_year_encoded = 5: 10 (694.0/270.0)
+|   |   |   |   release_year_encoded = 6
+|   |   |   |   |   price_encoded <= 0: 9 (852.0/399.0)
+|   |   |   |   |   price_encoded > 0: 10 (1186.0/594.0)
+|   |   |   price_encoded > 1
+|   |   |   |   release_year_encoded = 1: 9 (3.0)
+|   |   |   |   release_year_encoded = 2: 10 (1.0)
+|   |   |   |   release_year_encoded = 3: 7 (6.0/4.0)
+|   |   |   |   release_year_encoded = 4: 9 (18.0/7.0)
+|   |   |   |   release_year_encoded = 5
+|   |   |   |   |   price_encoded <= 3: 10 (87.0/40.0)
+|   |   |   |   |   price_encoded > 3: 9 (60.0/27.0)
+|   |   |   |   release_year_encoded = 6: 9 (450.0/190.0)
+|   |   tags_encoded = 7
+|   |   |   price_encoded <= 3
+|   |   |   |   price_encoded <= 1: 10 (489.0/206.0)
+|   |   |   |   price_encoded > 1: 9 (37.0/14.0)
+|   |   |   price_encoded > 3: 10 (15.0/2.0)
+|   |   tags_encoded = 8
+|   |   |   release_year_encoded = 1: 9 (0.0)
+|   |   |   release_year_encoded = 2: 9 (0.0)
+|   |   |   release_year_encoded = 3: 9 (0.0)
+|   |   |   release_year_encoded = 4: 7 (3.0/1.0)
+|   |   |   release_year_encoded = 5: 9 (22.0/9.0)
+|   |   |   release_year_encoded = 6: 9 (223.0/83.0)
+|   |   tags_encoded = 9
+|   |   |   price_encoded <= 1: 10 (177.0/63.0)
+|   |   |   price_encoded > 1
+|   |   |   |   release_year_encoded = 1: 9 (0.0)
+|   |   |   |   release_year_encoded = 2: 9 (0.0)
+|   |   |   |   release_year_encoded = 3: 10 (2.0)
+|   |   |   |   release_year_encoded = 4: 10 (2.0)
+|   |   |   |   release_year_encoded = 5: 9 (31.0/15.0)
+|   |   |   |   release_year_encoded = 6: 9 (67.0/34.0)
+all_count_encoded = 2
+|   all_percent_encoded = 0: 9 (0.0)
+|   all_percent_encoded = 1: 9 (0.0)
+|   all_percent_encoded = 2: 6 (6.0)
+|   all_percent_encoded = 3: 8 (29.0/8.0)
+|   all_percent_encoded = 4: 9 (65.0)
+|   all_percent_encoded = 5: 7 (72.0/21.0)
+all_count_encoded = 3
+|   price_encoded <= 1: 9 (12.0/7.0)
+|   price_encoded > 1: 7 (14.0/6.0)
+all_count_encoded = 4: 9 (18.0/2.0)
+all_count_encoded = 5: 6 (2.0/1.0)
+all_count_encoded = 6: 9 (1.0)
+
+Number of Leaves  : 	154
+
+Size of the tree : 	202
+
+
+=== Evaluation Summary ===
+Accuracy: 72.37%
+
+Correctly Classified Instances       36711               72.3697 %
+Incorrectly Classified Instances     14016               27.6303 %
+Kappa statistic                          0.6514
+Mean absolute error                      0.0695
+Root mean squared error                  0.187 
+Relative absolute error                 47.0945 %
+Root relative squared error             68.8108 %
+Total Number of Instances            50727     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.027    0.002    0.618      0.027    0.052      0.117    0.834     0.230     0
+                 0.995    0.118    0.792      0.995    0.882      0.832    0.941     0.790     1
+                 0.000    0.000    ?          0.000    ?          ?        0.998     0.032     2
+                 0.000    0.000    ?          0.000    ?          ?        0.999     0.070     3
+                 0.269    0.005    0.483      0.269    0.346      0.353    0.991     0.480     4
+                 1.000    0.000    0.889      1.000    0.941      0.943    1.000     0.873     5
+                 0.731    0.014    0.895      0.731    0.805      0.783    0.976     0.896     6
+                 0.071    0.001    0.589      0.071    0.127      0.201    0.946     0.208     7
+                 0.999    0.055    0.689      0.999    0.816      0.807    0.972     0.682     8
+                 0.659    0.084    0.627      0.659    0.643      0.564    0.926     0.663     9
+                 0.529    0.068    0.577      0.529    0.552      0.478    0.913     0.556     10
+Weighted Avg.    0.724    0.070    ?          0.724    ?          ?        0.934     0.675     
+
+=== Confusion Matrix ===
+
+     a     b     c     d     e     f     g     h     i     j     k   <-- classified as
+   115  4120     0     0     0     0     0     0     0     0     0 |     a = 0
+    71 15683     0     0     0     0     0     0     0     0     0 |     b = 1
+     0     0     0     0     0     5     0     0     0     0     0 |     c = 2
+     0     0     0     0     0    11     0     0     0     0     0 |     d = 3
+     0     0     0     0   218     0   591     0     0     0     0 |     e = 4
+     0     0     0     0     0   128     0     0     0     0     0 |     f = 5
+     0     0     0     0   233     0  5059     0  1622     2     0 |     g = 6
+     0     0     0     0     0     0     0    56     0   383   351 |     h = 7
+     0     0     0     0     0     0     0     1  5546     2     0 |     i = 8
+     0     1     0     0     0     0     1    35   413  5885  2600 |     j = 9
+     0     0     0     0     0     0     0     3   463  3108  4021 |     k = 10
+
+
+Execution time: 4.22 seconds

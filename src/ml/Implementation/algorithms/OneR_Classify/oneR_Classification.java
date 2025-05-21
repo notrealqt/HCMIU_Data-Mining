@@ -1,4 +1,5 @@
-package Implementation.algorithms.OneR_Classify;
+// This file should be moved to src/ml/Implementation/algorithms/OneR_Classify/oneR_Classification.java
+// package Implementation.algorithms.OneR_Classify;
 
 import weka.classifiers.Evaluation;
 import weka.classifiers.rules.OneR;
@@ -16,15 +17,15 @@ public class oneR_Classification {
         long totalStartTime = System.currentTimeMillis();
         // Only use the games ARFF files for OneR
         String[] arffFiles = {
-            "data/processed/games/steam_game_data_encoded.arff", // before improvement
-            "data/processed/games/steam_game_data_encoded_improve.arff" // after improvement
+            "./data/processed/games/steam_game_data_encoded.arff", // before improvement
+            "./data/processed/games/steam_game_data_encoded_improve.arff" // after improvement
         };
         String[] tags = {"before", "after"};
         for (int i = 0; i < arffFiles.length; i++) {
             long startTime = System.currentTimeMillis();
             String datasetPath = arffFiles[i];
             String tag = tags[i];
-            String outDir = "results/reports/" + tag + "/";
+            String outDir = "./results/reports/" + tag + "/";
             try {
                 DataSource source = new DataSource(datasetPath);
                 Instances data = source.getDataSet();
@@ -53,7 +54,7 @@ public class oneR_Classification {
                 long evalEndTime = System.currentTimeMillis();
 
                 // Write results to file
-                try (PrintWriter out = new PrintWriter(new FileWriter(outDir + "oneR_train.txt"))) {
+                try (PrintWriter out = new PrintWriter(new FileWriter(outDir + "oneR.txt"))) {
                     out.println("=== OneR Classifier Training Results (" + tag + ") ===");
                     out.println("Selected Rule:\n" + classifier.toString());
                     out.println("\n=== Evaluation Summary ===");
@@ -67,7 +68,7 @@ public class oneR_Classification {
                     out.printf("Evaluation time: %.2f seconds\n", (evalEndTime - evalStartTime) / 1000.0);
                     out.printf("Total execution time: %.2f seconds\n", (endTime - startTime) / 1000.0);
                 }
-                System.out.println("OneR training results saved to " + outDir + "oneR_train.txt");
+                System.out.println("OneR training results saved to " + outDir + "oneR.txt");
 
             } catch (Exception e) {
                 e.printStackTrace();

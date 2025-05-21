@@ -1,5 +1,0 @@
-Dataset,Model,RMSE,MAE,R2
-before_improvement,Linear Regression,6.987796328481387e-15,6.2100487925213835e-15,1.0
-before_improvement,Random Forest,0.0,0.0,1.0
-after_improvement,Linear Regression,5.018904898496214e-15,4.669469358124073e-15,1.0
-after_improvement,Random Forest,0.0,0.0,1.0

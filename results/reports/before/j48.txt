@@ -254,4 +254,4 @@ Weighted Avg.    0.724    0.070    ?          0.724    ?          ?        0.934
      0     0     0     0     0     0     0     3   463  3108  4021 |     k = 10
 
 
-Execution time: 4.55 seconds
+Execution time: 4.22 seconds

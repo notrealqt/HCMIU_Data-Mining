@@ -1,5 +1,5 @@
-// This file should be moved to src/ml/Implementation/algorithms/naiveBayes_Classification.java
-package Implementation.algorithms.NaiveBayes_Classify;
+// This file should be moved to src/ml/Implementation/algorithms/NaiveBayes_Classify/naiveBayes_Classification.java
+// package Implementation.algorithms.NaiveBayes_Classify;
 
 import weka.classifiers.Evaluation;
 import weka.classifiers.bayes.NaiveBayes;
@@ -50,7 +50,7 @@ public class naiveBayes_Classification {
                 long evalEndTime = System.currentTimeMillis();
 
                 // Write results to file
-                try (PrintWriter out = new PrintWriter(new FileWriter(outDir + "naive_bayes_train.txt"))) {
+                try (PrintWriter out = new PrintWriter(new FileWriter(outDir + "naive_bayes.txt"))) {
                     out.println("=== Naive Bayes Classifier Training Results (" + tag + ") ===");
                     out.println("Classifier: \n" + classifier.toString());
                     out.println("\n=== Evaluation Summary ===");
@@ -64,7 +64,7 @@ public class naiveBayes_Classification {
                     out.printf("Evaluation time: %.2f seconds\n", (evalEndTime - evalStartTime) / 1000.0);
                     out.printf("Total execution time: %.2f seconds\n", (endTime - startTime) / 1000.0);
                 }
-                System.out.println("Naive Bayes training results saved to " + outDir + "naive_bayes_train.txt");
+                System.out.println("Naive Bayes training results saved to " + outDir + "naive_bayes.txt");
 
             }catch (Exception e){
                 e.printStackTrace();

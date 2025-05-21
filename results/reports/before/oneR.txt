@@ -54,6 +54,6 @@ Weighted Avg.    0.701    0.076    ?          0.701    ?          ?        0.813
      0     0     0     0     0     0     0     0   463  3570  3562 |     k = 10
 
 
-Build time: 0.06 seconds
-Evaluation time: 0.52 seconds
-Total execution time: 1.95 seconds
+Build time: 0.07 seconds
+Evaluation time: 0.54 seconds
+Total execution time: 1.89 seconds
